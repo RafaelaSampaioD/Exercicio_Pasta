@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--input é um campo para a entrada de dados em um formulario-->
+    <!--TYPE E ATRIBUTO QUE DEFINE O TYPO DE DE ENTRADA DE DADOS DO FORMULARIO-->
+    <!--ID é atributo que define o indentificador de únicvo para um único elemento-->
+    <!--value selecionar nome ao botão -->
+    <!--action seleciona para aonde aquelas informações devem ir-->
+    <!--label, indentificar oque aquilo é. id(etiqueta) ctrl+ shift+p+ envelopar+label, ele associa uma legenda ao imput-->
+    <!--o for é o "crachá" da tag-->
+    <title>Lição de formúlario</title>
+</head>
+
+<body>
+    <h1>Formúlação Simples</h1>
+    <hr>
+    <form action="cadastro.php" method="post">
+        <!--post é para enviar em um negócio externo-->
+        <p><label for="inome">nome:
+                <input type="text" name="nome" id="inome"></label> 
+                <!--etiqueta para id selecionado-->
+        </p>
+
+        <p>
+            <label for="iemail">Email</label>
+            <input type="email" name="sobrenome" id="isobrenome"> </label>
+        </p>
+        <p>
+            <label for="isenha">senha
+                <input type="password" name="senha" id="isenha"></label>
+        </p>
+        <input type="submit" value="enviar">
+    </form>
+    <hr>
+    <h1>formulario de cadastro</h1>
+    <p>
+    <form action="cadastro.php" method="post">
+        <label for="inomecompleto">nome completo</label>
+        <input type="text" name="nome" id="inome">
+        </p>
+
+        <p>
+            <label for="inomedeusuário">Nome de Usuário</label> <!--label é a etiqueta, podendo ser colocada para uma correção de indentificação-->
+            <input type="text" name="nomedeusuário" id="inomedeusúario">
+        </p>
+        <p>
+            <label for="imail">email</label>
+            <input type="email" name="email" id="iemail">
+        </p>
+        <p>
+            <label for="isenha">senha</label>
+            <input type="password" name="senha" id="isenha">
+        </p>
+
+        <p>TIME:<BR>
+            <input type="radio" name="São Paulo" id="sãopaulo"> São Paulo
+            <input type="radio" name="Corinthians" id="corinthians"> Corinthians
+            <input type="radio" name="Flamengo" id="flamengo">Flamengo
+            <input type="radio" name="Palmeiras" id="palmeiras">Palmeiras> <!--radio é a seleção, um tipo delas-->
+        </p>
+        <p>Interesses:
+            <!--checkbox é para aparecer a seleção, como no site, as cidades-->
+            <input type="checkbox" name="Tecnologia" id="tec">Tecnologia
+            <input type="checkbox" name="Esporte" id="sprt">Esporte
+            <input type="checkbox" name="Música" id="msc">Música
+        </p>
+        Cidade:<br>
+        <select name="" id="">
+            <option value="sp"> São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="bh">Belo Horizonte</option> <!--option é a seleção-->
+            </select>
+            <hr>
+            </p>
+            <p>CAIXA DE MENSAGENS:<BR>
+                <textarea name="mensagens" id="msg" cols="60" rows="20"></textarea> <!--criar caixa de escrita-->
+
+            </p>
+            <input type="submit" value="enviar"> 
+            <input type="reset" value="redefinir">
+            
+            
+            <!--BOTAO DE OPÇÃO IMPUT(RADIO), SO PERMITE MARCAR UMA OPÇÃO-->
+
+
+
+    </form>
+</body>
+
+</html>
